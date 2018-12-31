@@ -1,0 +1,322 @@
+/* General Styles */
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	background: url(../images/Landing_1.jpg);
+	background-size: cover;
+	height: 1024px;
+	width: 768px;
+	
+} 
+
+h1, h3, h4, h5, h6, p{
+	font-family: 'Lato', sans-serif;
+	color: white;
+}
+
+h1, h3	{
+	font-size: 14px;
+	text-align: right;
+}
+
+
+h1	{
+	letter-spacing: 3px;
+	font-weight: 700;
+	font-size: 14px;
+	padding-top: 17px;
+	margin-right: 20px;
+}
+
+h3	{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	padding-top: 640px;
+	margin-right: 60px;
+}
+
+h4 {
+	padding: 30px;
+	border: .5px solid white;
+	border-radius: 50px;
+	margin-top: 40px;
+	font-size: 35px;
+	
+
+}
+
+h5 {
+	font-size: 25px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%); 
+
+
+}	
+
+	
+
+h4, h5 {
+	text-align: center;
+
+}
+
+h4, h5, h6 {
+	font-weight: 400;
+}
+
+
+h6 {
+	font-size: 32px;
+	text-align: left;
+	line-height: 40px;
+}
+
+
+#Container {
+	background-color: #dddddd;
+	height: 100%;
+	width: 100%;
+}
+
+/* Styles for Landing Page */
+
+#Welcome h2, #Bienvenidos h2 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	color: white;
+	text-align: left;
+	margin-left: 75px;
+}
+
+#Welcome h2, .Buttons h2 {	
+	animation-name: Tap;
+    animation-duration: 12s;
+    opacity: 0;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Tap {
+    0%   {color: white; opacity: 0;}
+    25% {color: white; opacity: 1;}
+    50% {color: white; opacity: 0;}
+    100% {color: white; opacity:0;}
+}
+
+#Bienvenidos h2 {	
+	animation-name: Toca;
+    animation-duration: 12s;
+    opacity: 0;
+    animation-iteration-count: infinite;
+    animation-delay: 6s;
+}
+
+@keyframes Toca {
+    0%   {color: white; opacity: 0;}
+    25% {color: white; opacity: 1;}
+    50% {color: white; opacity: 0;}
+    100% {color: white; opacity:0;}
+
+}	 
+
+#Triumph {
+	width: 100%;
+	height: 50px;
+	background: linear-gradient(#478a78, #74a48a);
+}
+
+#Welcome, #Bienvenidos{
+	width: 100%;
+}
+
+
+#Bienvenidos {
+	z-index: 1;
+}
+
+#Welcome p, #Bienvenidos p{
+	font-family: 'Frank Ruhl Libre', serif;
+	font-weight: 900;
+	font-size: 75px;
+	padding-left: 65px;
+	padding-top: 150px;
+	color: #cbe4b9;
+	text-shadow: 0px 0px 8px black;
+}
+
+#Bienvenidos p{
+	margin-top: -270px;
+}	
+
+#Welcome p {	
+	animation-name: Welcome;
+    animation-duration: 12s;
+    opacity: 0;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Welcome {
+    0%   {color: #cbe4b9; opacity: 0;}
+    25% {color: #cbe4b9; opacity: 1;}
+    50% {color: #cbe4b9; opacity: 0;}
+    100% {color: #cbe4b9; opacity:0;}
+
+}
+
+#Bienvenidos p {	
+	animation-name: Bienvenidos;
+    animation-duration: 12s;
+    opacity: 0;
+    animation-iteration-count: infinite;
+    animation-delay: 6s;
+}
+
+@keyframes Bienvenidos {
+    0%   {color: #cbe4b9; opacity: 0;}
+    25% {color: #cbe4b9; opacity: 1;}
+    50% {color: #cbe4b9; opacity: 0;}
+    100% {color: #cbe4b9; opacity:0;}
+
+}
+
+
+
+/*
+@media screen and (max-width: 768px){
+	#Landingcontainer {
+		width: 100%;
+		height: 600px;
+		color: pink;
+	}	
+} */
+
+
+
+
+
+/* Styles for Language Page */
+
+#Language {
+	background-color: lightgray;
+	height: 974px;
+	width: 768;
+}
+
+#LangContainer {
+	padding-top: 250px;
+	height: 974px;
+	width: 300px;
+	margin: auto;
+}
+
+/* Styles for Focus Area Page */
+
+#FocusContainer {
+	background-color: #d5d5d4;
+	height:450px;
+	width:100%;
+	border: .5px solid white;
+	margin-top: 100px;
+}
+
+#ButtonContainer {
+	height: 300px;
+	width: 90%;
+	margin: auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%); 
+}	
+
+.Buttons {
+	background: linear-gradient(#478a78, #74a48a);
+	height: 120px;
+	width: 320px;
+	border-radius: 60px;
+	border: .5px solid #76686f;
+	margin: auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);	 
+
+}
+
+.Buttons:active {
+  top: 72px;
+
+}
+
+
+#Adherance, #SideEffects, #Relationship, #Medication {
+	width: 50%;
+	height: 50%;
+	float: left;
+
+}
+
+#NarrativeWrapper {
+	background-color: red;
+
+}
+
+.Narrative {
+	height: 200px;
+	width: 60%;
+	margin-left: 115px;
+	margin-top: 80px;
+}
+
+.Narrative p{
+	color: white;
+	font-size: 25px;
+	margin-top: 20px;
+
+}
+
+#Line {
+	background-color: #6a9f82;
+	height: 4px;
+	width: 130px;
+	margin-top: 15px;
+
+}
+
+#DotContainer {
+	height: 50px;
+	width: 40%;
+	margin: auto;
+	display: flex;
+    justify-content: space-between;
+}	
+
+.Dots {
+	background-color: lightgrey;
+	border: 3px solid white;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	display: inline-block;
+
+}
+
+.ActivatedDots {
+	background-color: #eeedee;
+	border: 3px solid white;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	display: inline-block;
+
+}
+
+
+
+
+
+
+
