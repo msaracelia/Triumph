@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Focus Selection</title>
+	<link rel="stylesheet" type="text/css" href="css/TRIUMPH.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:900|Lato:300,400,700" rel="stylesheet">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<body>
+	<div id="Container">
+		
+		<div id="Triumph">
+		<h1>TRIUMPH</h1>
+		</div>
+
+		<div id="FocusContainer">
+			<div id="ButtonContainer">
+				
+				
+				<div id="Adherance"> 
+				<div class="Buttons">
+				<h5>Adherance</h5>	
+				</div>
+				</div>	
+
+
+
+				<div id="SideEffects"> 
+				<div class="Buttons">
+				<h5>Side Effects</h5>	
+				</div>
+				</div>	
+
+				
+
+				<div id="Relationship"> 
+				<div class="Buttons">
+				<h5>Relationship with Provider</h5>	
+				</div>
+				</div>
+
+
+				<div id="Medication"> 
+				<div class="Buttons">
+				
+				<h5>Medication Changes</h5></div>
+				
+				</div>			
+
+			</div>
+		
+		</div>	
+		<div class="Narrative">
+			<h6>Let's start by picking 1 to 2 areas that are important for today</h6>
+
+			<div id="Line"></div>
+
+			<p>Tap to select areas</p>
+	
+			</div>
+
+			<div id="DotContainer">
+				<div class="ActivatedDots"></div>
+				<div class="ActivatedDots"></div>
+				<div class="ActivatedDots"></div>
+				<div class="Dots"></div>
+				<div class="Dots"></div>
+				<div class="Dots"></div>
+
+			</div>
+
+	
+	</div>
+
+	
+	
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
+var count = 0,
+    $allDivs = $('.NextButton');
+
+$('Buttons').click( function() {
+    if( count < $allDivs.length ) {
+        $allDivs.eq( count ).show( 'slow' );
+        count++;
+    }
+});
+
+</script>	
+</body>
+</html>
